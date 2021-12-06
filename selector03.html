@@ -31,8 +31,13 @@
             color:black !important;
         }
 
-
-
+        /* 가상요소선택자 */
+        
+        a[href="#"]:link{color:red;}                  
+        a[href="#"]:hover{color:green;}
+        a[href="#"]:active{color:blue;}   
+        a[href="#"]:visited{color:cyan;}   
+        
     </style>
 </head>
 <body>
@@ -49,5 +54,8 @@
     <button type="submit">전송</button>
     <button type="reset" style="color:red;">취소</button>
    
+    <!-- !!!!!!!!!!!!!!!!!!!!!!!가상요소선택자 -->
+    <a href="#">임시</a>
+
 </body>
 </html>
