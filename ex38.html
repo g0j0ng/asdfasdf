@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스킵메뉴(skip-menu)</title>
+    <style>
+        *{box-sizing: border-box;margin: 0;padding: 0; }
+        ul,ol,li{list-style: none;}
+        a{text-decoration: none;color: #000;}
+        .clearfix::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .wrap{
+            width: 960px;
+            margin: 0 auto;
+        }
+        .wrap>*{
+            padding: 20px;
+        }
+        .header,.sec02,.footer{
+            background-color: #000;
+            color: #fff;
+        }
+        /* HEADER 스타일 */
+        .header a{
+            color: inherit;
+        }
+        h1{
+            float: left;
+        }
+        nav{
+            float: right;
+            margin-top: 6px;
+        }
+        nav li{
+            display: inline-block;
+            margin-left: 20px;
+
+        }
+
+        /* SECTION 스타일 */
+        .sec h2{
+            padding: 20px;
+            text-align: center;
+        }
+        .sec p{
+            text-align: justify;
+        }
+        /* FOOTER 스타일 */
+        
+
+        /* FOCUS 이벤트 */
+        .skip-menu a{
+            position: fixed;
+            left: 0;;
+            top: -999px;
+            z-index: 99999;
+
+            width: 300px;
+            border: 2px solid #999;
+            padding: 6px;
+            border-radius: 4px;
+            background-color: #000;
+            color:#fff;
+            font-size: 20px;
+            text-align: center;
+        }
+        .skip-menu a:focus{
+            top: 0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <section class="skip-menu">
+        <ul>
+            <li><a href="sec01">내 소개 바로가기</a></li>
+            <li><a href="sec02">내 작품 바로가기</a></li>
+            <li><a href="sec03">글적글적 게시판 바로가기</a></li>
+        </ul>
+    </section>
+
+
+    <section class="wrap">
+        <header class="header clearfix">
+            <h1>스킵메뉴(skip-menu)</h1>
+            <nav>
+                <ul>
+                    <li><a href="#sec01">내 소개</a></li>
+                    <li><a href="#sec02">내 작품</a></li>
+                    <li><a href="#sec03">글적글적</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="sec sec01" id="sec01">
+            <h2>내소개</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum voluptates asperiores sequi nesciunt, corporis sed, at labore dolores perspiciatis corrupti officiis expedita tenetur tempore accusamus quos sapiente natus vitae quod.
+            Ad deserunt odit quas quibusdam cumque. Laudantium totam atque fugit adipisci odio assumenda fuga, dolores quae exercitationem nemo aut quam quis maxime aperiam, labore neque fugiat sed voluptatem molestiae. Perferendis.
+            Ex ratione repellat, ullam natus voluptates suscipit animi dolore maiores debitis nobis, cum nulla odit soluta sit. Quos amet eum distinctio dolore sequi perferendis, debitis cupiditate delectus porro beatae fugiat.
+            Minus dolorem consequuntur sunt accusantium, doloribus libero voluptatum esse quidem officia a laudantium unde deleniti aliquid quasi odio praesentium error eos numquam in est suscipit, nemo eum ipsam? Unde, temporibus!
+            Eos sapiente porro dolorem necessitatibus culpa voluptates incidunt iusto quisquam nemo ipsum, deserunt, dolorum architecto. Sed voluptatem officiis, illum veritatis excepturi quibusdam porro, fugit neque minus magni non praesentium iusto!
+            Quo ipsa deserunt iste est repellendus doloribus et earum harum cum ut aspernatur tenetur, quasi illo eligendi illum, delectus hic maxime error nostrum voluptates obcaecati ad! Ullam consequuntur odio culpa!
+            Minima cupiditate sequi eos accusantium facilis fugit veritatis optio libero sapiente porro qui mollitia laborum ut soluta ducimus eius necessitatibus quos error excepturi ipsa quo sint, ea quibusdam. Eum, enim.
+            Obcaecati veniam quis expedita eos unde laboriosam sapiente ducimus adipisci rerum necessitatibus distinctio blanditiis, repellat accusantium quos est officiis maiores molestiae in nemo ad? Provident minima quod ullam dolorem atque.
+            Nulla minus nisi veritatis illum optio iure ipsam provident minima doloremque rem illo repellendus omnis, natus repellat odio? Facilis consectetur alias magni illum temporibus error asperiores qui quibusdam odit natus.
+            Quidem neque eligendi perferendis aspernatur totam itaque magnam consequuntur recusandae debitis corrupti laborum incidunt dignissimos velit nesciunt, ullam nobis accusamus placeat veniam cupiditate, sequi suscipit. Deserunt quae cumque adipisci repellat!</p>
+        </section>
+        <section class="sec sec02" id="sec02">
+            <h2>내작품</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quibusdam, soluta corrupti explicabo esse veritatis quaerat consectetur iste ipsum! Laudantium officiis maiores laborum nemo quo veritatis ex repudiandae cum itaque.
+            Quia molestiae nisi ullam a earum voluptatem amet voluptate deleniti dolore facilis aliquid atque quasi, cumque delectus minima quam corporis fugit quibusdam veritatis dicta dolorum obcaecati consequatur eos. Fugit, eius?
+            Error velit nesciunt doloribus rem impedit alias a, soluta, perspiciatis assumenda, provident amet consequatur sunt! Illo optio adipisci nulla perferendis dolore, harum quis, eos maxime necessitatibus expedita eveniet, quae blanditiis?
+            Sunt sed maiores nostrum, earum necessitatibus maxime ratione blanditiis quod incidunt. Sapiente, ut? Rem libero voluptas quae excepturi repellendus magnam ducimus odio quidem, aut iste maxime eveniet dolorum nesciunt earum.
+            Repellat, numquam sed inventore error explicabo tenetur. Dicta voluptatum autem, dolorum deserunt perspiciatis illum officiis, rerum, ratione deleniti labore inventore quasi eos est amet eligendi atque? Veniam incidunt cumque totam.
+            Earum tempore id itaque quasi alias dicta tenetur, voluptates harum aperiam ipsam ex! Animi rerum temporibus accusamus, excepturi voluptatem cupiditate dolore labore, earum, sequi libero assumenda repellendus sunt illum quis!
+            Cum, laborum. Eveniet, temporibus doloribus inventore alias esse delectus blanditiis voluptates molestiae! Expedita ducimus molestiae deserunt corrupti quidem hic velit neque non eveniet, magni id incidunt aperiam deleniti quo ea!
+            Quasi, aspernatur. Saepe iusto commodi sed qui ea modi consequuntur neque, illum sint rerum voluptate enim facilis voluptates numquam ipsum? Tempore maiores minus id impedit vero dicta eos, dolor illo.
+            Quis fugit, odit optio ipsa ratione voluptates consequatur blanditiis accusamus nihil temporibus in laudantium. Ullam labore sit cum necessitatibus facere. Consequuntur nobis debitis esse nostrum reiciendis accusantium accusamus possimus quam!
+            Consequuntur, inventore sit quae explicabo eveniet maxime commodi mollitia quo tempore illo delectus, vel ea molestias laboriosam incidunt? Iure, iste ex? Dicta earum repudiandae dignissimos distinctio blanditiis maiores, deserunt consectetur.</p>
+        </section>
+        <section class="sec sec03" id="sec03">
+            <h2>글적글적</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi deserunt recusandae quod vitae perspiciatis facere veritatis nesciunt quos iusto provident ipsam ab iste quaerat ad, similique quo itaque sapiente odit?
+            Libero, repellendus fuga! Est adipisci earum exercitationem, cum optio ipsum magnam modi laborum, voluptatem quis quam saepe rerum mollitia at aliquam ea. In tenetur, ex nihil cupiditate minus sed voluptas!
+            Omnis veniam veritatis perspiciatis porro magni! Ducimus, tempora quia amet dolorem ipsa, eos repellat commodi accusantium obcaecati, eveniet provident dicta aliquid molestiae illum dolor maiores dolore laboriosam eaque eius repudiandae!
+            Earum quod omnis amet voluptas et fugiat vitae aliquam consequuntur sequi? Architecto error voluptas delectus maxime, culpa hic mollitia velit distinctio placeat dignissimos cum atque tempore, natus enim. Reiciendis, quia!
+            Porro consequuntur qui fuga, iste vel assumenda eius nam, repellat maxime ex animi alias quos incidunt optio commodi unde illo architecto ipsam nisi nobis, quas asperiores laborum at. Commodi, expedita!
+            Repellendus iure laborum tempora, enim non sapiente magnam blanditiis. Nihil odio cupiditate facere velit quas omnis voluptates fugiat esse dolore. Sint id cupiditate odit veritatis provident debitis in dicta veniam!
+            Numquam saepe impedit reiciendis quisquam nam cumque illum voluptates ducimus, iste quod rem dolores molestias, architecto, animi aliquam consequatur quaerat quis necessitatibus porro. Sed natus reiciendis consectetur. Error, consectetur repudiandae.
+            Beatae magnam, porro repellat neque veritatis quibusdam quas dolores doloremque tempore accusamus eos, corrupti saepe dolor id! Quos quaerat cupiditate eius alias tempore nobis, totam reiciendis exercitationem rem eligendi ea?
+            Praesentium est minima enim pariatur amet error quam rerum deserunt illum veniam architecto soluta ducimus dolorem, laboriosam facere cupiditate obcaecati fugiat commodi voluptate sapiente. Distinctio provident porro earum velit expedita!
+            Dignissimos impedit, pariatur nesciunt fugit soluta, molestias repellendus debitis quod nostrum quo quasi perspiciatis id, a quisquam expedita culpa accusantium eveniet omnis ipsum odio. Numquam alias placeat minus nulla reprehenderit!</p>
+        </section>
+        <footer class="footer">
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis rerum commodi tempore. Sint consequatur unde quibusdam, praesentium quia reprehenderit voluptate ad quis vitae, modi nemo quasi beatae vel fuga dolor.
+        </footer>
+
+    </section>
+</body>
+</html>
